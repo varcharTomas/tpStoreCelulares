@@ -1,0 +1,100 @@
+.detalle-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.btn-volver {
+  align-self: flex-start;
+  text-decoration: none;
+  color: #9b2c2c;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #9b2c2c;
+  transition: background-color 0.2s ease;
+}
+
+.btn-volver:hover {
+  background-color: #9b2c2c;
+  color: white;
+}
+
+.detalle-card {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: #fff3ea;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(92,58,33,0.07);
+}
+
+.detalle-imagen {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detalle-imagen img {
+  max-width: 100%;
+  border-radius: 14px;
+  object-fit: contain;
+}
+
+.detalle-info {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.detalle-info h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #5c3a21;
+}
+
+.detalle-info p {
+  font-size: 1rem;
+  color: #6b5146;
+  line-height: 1.5;
+}
+
+.detalle-info h3 {
+  font-size: 1.4rem;
+  color: #9b2c2c;
+  margin-top: 10px;
+}
+
+.btn-comprar {
+  background-color: #9b2c2c;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #5c1a1a;
+}
+
+@media (max-width: 768px) {
+  .detalle-card {
+    flex-direction: column;
+  }
+
+  .detalle-info, .detalle-imagen {
+    width: 100%;
+  }
+}

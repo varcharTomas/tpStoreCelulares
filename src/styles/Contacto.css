@@ -1,0 +1,120 @@
+.contacto-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background-color: #fff3ea;
+  color: #5c3a21;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(155,44,44,0.1);
+}
+
+.formulario-contacto {
+  background-color: #f3e9dc;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(155,44,44,0.1);
+}
+
+.formulario-contacto h2 {
+  font-size: 2rem;
+  color: #5c3a21;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.formulario-contacto p {
+  font-size: 1.1rem;
+  color: #5c3a21;
+  margin-bottom: 30px;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formulario-contacto label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #5c3a21;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  margin-top: 6px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #c75c4e;
+  font-size: 1rem;
+  background-color: #fff7f2;
+  color: #5c3a21;
+}
+
+.formulario-contacto button {
+  margin-top: 20px;
+  background-color: #9b2c2c;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #5c1a1a;
+}
+
+.info-contacto {
+  text-align: center;
+  color: #5c3a21;
+}
+
+.info-contacto h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.datos-contacto p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.datos-contacto a {
+  color: #9b2c2c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.datos-contacto a:hover {
+  text-decoration: underline;
+}
+
+.volver-home {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 0.95rem;
+  color: #6b5146;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.volver-home:hover {
+  color: #9b2c2c;
+}
+
+@media (max-width: 700px) {
+  .contacto-container {
+    gap: 40px;
+    padding: 40px 16px;
+  }
+}

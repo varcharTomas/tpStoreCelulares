@@ -1,0 +1,66 @@
+.tarjeta-celu {
+  background-color: #fff3ea;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgb(155 44 44 / 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #c75c4e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-celu:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgb(92 29 29 / 0.3);
+}
+
+.tarjeta-celu img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background-color: #fbeae3;
+}
+
+.tarjeta-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tarjeta-info h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #5c3a21;
+  font-weight: 800;
+}
+
+.tarjeta-info p {
+  color: #6b5b52;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.tarjeta-precio {
+  font-weight: 700;
+  color: #9b2c2c;
+  font-size: 1.1rem;
+  margin-top: 6px;
+}
+
+.btn-comprar {
+  margin-top: 14px;
+  text-align: center;
+  background-color: #9b2c2c;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #5c1a1a;
+}
