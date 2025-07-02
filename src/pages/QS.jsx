@@ -14,7 +14,7 @@ export default function QuienesSomos() {
       <section className="qs-content">
         <div className="qs-bloque">
           <img
-            src="https://cdn.pixabay.com/photo/2014/04/03/10/32/mobile-phone-311327_1280.png"
+            src="https://playmania438.com.ar/wp-content/uploads/2022/05/cae.jpg"
             alt="Smartphone"
           />
           <div>
@@ -28,7 +28,7 @@ export default function QuienesSomos() {
 
         <div className="qs-bloque reverse">
           <img
-            src="https://cdn.pixabay.com/photo/2016/11/29/04/17/business-1868750_1280.jpg"
+            src="https://bookline.ai/wp-content/uploads/2024/09/Atencio%CC%81n-cliente-hotel.jpg"
             alt="Atención personalizada"
           />
           <div>
@@ -42,7 +42,7 @@ export default function QuienesSomos() {
 
         <div className="qs-bloque">
           <img
-            src="https://cdn.pixabay.com/photo/2020/12/09/11/28/phone-5818899_1280.jpg"
+            src="https://media.losandes.com.ar/p/78d7edd4540fad09f5587c645aeb59d1/adjuntos/368/imagenes/100/036/0100036679/1000x0/smart/los-mejores-celulares-2023-y-que-seguiran-vigentes-2024.jpg"
             alt="Variedad de dispositivos"
           />
           <div>
