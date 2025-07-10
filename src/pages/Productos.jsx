@@ -20,29 +20,29 @@ const Productos = () => {
   }, [idMarca]);
 
   return (
-    <div className="productos-page">
-      <h1>Catálogo de celulares</h1>
-
+    <div className="productos-wrapper">
+      <h2 style={{ textAlign: 'center', marginTop: '2rem' }}>Filtrar por Marca</h2>
       <div className="filtros-marcas">
-        <Link to="/productos" className={activeMarca === null ? 'activo' : ''}>Todos</Link>
-        {marcas.map(m => (
+        {marcas.map(marca => (
           <Link
-            key={m.id}
-            to={`/productos/marca/${m.id}`}
-            className={activeMarca === m.id ? 'activo' : ''}
+            key={marca.id}
+            to={`/productos/marca/${marca.id}`}
+            className={activeMarca === marca.id ? 'activo' : ''}
           >
-            {m.nombre}
+            {marca.nombre}
           </Link>
         ))}
+        <Link to="/productos" className={!activeMarca ? 'activo' : ''}>Todos</Link>
       </div>
 
-      <div className="grid-productos">
-        {filteredProducts.map(cel => (
-          <div key={cel.id} className="card-producto">
-            <img src={cel.fotos[0]} alt={cel.nombre} />
-            <h3>{cel.nombre}</h3>
-            <p>${cel.precio}</p>
-            <Link to={`/producto/${cel.id}`}>Ver más</Link>
+      <div className="productos-container">
+        {filteredProducts.map(producto => (
+          <div className="producto-card" key={producto.id}>
+            <Link to={`/producto/${producto.id}`}>
+              <img src={producto.fotos[0]} alt={producto.nombre} />
+              <h3>{producto.nombre}</h3>
+              <p>${producto.precio.toLocaleString()}</p>
+            </Link>
           </div>
         ))}
       </div>

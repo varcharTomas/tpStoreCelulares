@@ -1,18 +1,67 @@
 .filtros-marcas {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 
 .filtros-marcas a {
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  background-color: #eee;
-  border-radius: 4px;
-  color: black;
+  padding: 0.6rem 1.2rem;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  color: #333;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.filtros-marcas a:hover {
+  background-color: #e0e0e0;
 }
 
 .filtros-marcas a.activo {
-  background-color: #0066cc;
+  background-color: #801336; /* Bordó */
   color: white;
+}
+
+/* Grilla de productos */
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.producto-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 220px;
+}
+
+.producto-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.producto-card img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.producto-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.producto-card p {
+  font-weight: bold;
+  color: #801336; /* Bordó */
 }

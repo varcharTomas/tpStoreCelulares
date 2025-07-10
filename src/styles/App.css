@@ -1,14 +1,109 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* Estilo general de las tarjetas de producto */
+.producto-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.producto-card:hover {
+  transform: scale(1.02);
+}
+
+/* Tamaño de las imágenes de los productos */
+.producto-card img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+/* Estilo de los títulos y precios */
+.producto-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.producto-card p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo del contenedor de productos */
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
   padding: 2rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilo para imagen principal en el detalle del producto */
+.main-image {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Miniaturas (thumbnails) del producto */
+.thumbnail-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: border 0.2s ease;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+  border-color: #007bff;
+}
+
+.thumbnail img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Estilo para el contenedor de detalle */
+.producto-detalle-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+/* Estilo para galería e info */
+.producto-gallery {
+  flex: 1;
+}
+
+.producto-info {
+  flex: 1;
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+  font-size: 0.9rem;
+  margin: 1rem;
+}
+
+.breadcrumb a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
 }

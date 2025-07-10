@@ -3,8 +3,8 @@ import { celulares } from '../data/data';
 import '../styles/ProductoDetalle.css';
 
 export default function ProductoDetalle() {
-  const { id } = useParams();
-  const celular = celulares.find(c => c.id === Number(id));
+  const { idCelular } = useParams();
+  const celular = celulares.find(c => c.id === Number(idCelular));
 
   if (!celular) {
     return (
@@ -27,7 +27,7 @@ export default function ProductoDetalle() {
         </div>
         <div className="detalle-info">
           <h2>{celular.nombre}</h2>
-          <p>{celular.descripcion}</p>
+          <p>{celular.descripcion || 'Este celular no tiene descripción aún.'}</p>
           <h3>${celular.precio}</h3>
           <button className="btn-comprar" onClick={() => alert('Compra realizada con éxito')}>
             Comprar

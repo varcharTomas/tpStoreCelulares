@@ -14,18 +14,7 @@ function NavbarComponente() {
       </nav>
 
       {/* Filtro por marcas */}
-      <div className="brand-filter">
-        <h3>Filtrar por Marca</h3>
-        {marcas.map(marca => (
-          <Link 
-            key={marca.id}
-            to={`/productos/marca/${marca.id}`} 
-            className="nav-item brand-item"
-          >
-            {marca.nombre}
-          </Link>
-        ))}
-      </div>
+      
     </header>
   );
 }
